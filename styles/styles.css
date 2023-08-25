@@ -4,6 +4,8 @@
 :root {
     --mg-b: 2rem;
     --primary: #F9A826;
+    --primary-darker: #ee9c18;
+    --secondary: #ff7f5099;
 }
 
 *{box-sizing: border-box; margin: 0; font-size: 62.5%;}
@@ -20,9 +22,7 @@ main {
     font-family: 'Cabinet Grotesk', sans-serif;
 }
 
-section {
-    height: 95vh;
-}
+
 
 .hero {
     display: grid;
@@ -30,6 +30,7 @@ section {
     grid-auto-rows: 450px;
     border-bottom: 1px #ddd solid;
     place-content: center;
+    min-height: 90vh;
 }
 
 .hero__info {
@@ -57,6 +58,11 @@ section {
     border-radius: 2.5rem;
     padding: 1rem 1.5rem;
     font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.hero__info button:hover {
+    background-color: var(--primary-darker);
 }
 
 .hero__img img {
@@ -90,4 +96,47 @@ section {
 
 .dishes-item__big {
     grid-area: 1 / 1 / 3 / 3;
+}
+
+.menu {
+    margin: 5.5rem 0 12rem 0;
+}
+
+.menu--title {
+    text-align: center;
+    font-size: 4.7rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5rem;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px, 250px));
+    grid-template-rows: 1fr;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.menu-grid-item {
+    position: relative;
+    padding: .5rem;
+    background-color: var(--secondary);
+    border-top-left-radius: 25%;
+}
+
+.menu-grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.menu-grid-item i {
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    font-size: 2.5rem;
+    color: #333;
+    cursor: pointer;
 }
