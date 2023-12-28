@@ -1,7 +1,7 @@
 # 🍽️ Food Landing Page 🍽️
  ## Introduction
 
-This repo contains the code for a landing page for a new headphones product. The landing page is designed to generate leads and sales.
+This repo contains a landing page for a restauraunt. The landing page is designed to generate leads and sales.
 
 
 
